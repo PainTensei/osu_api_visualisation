@@ -1,5 +1,5 @@
 # osu_api_visualisation
-## trying to play around with the osu! API.
+trying to play around with the osu! API.
 
 
 ### Week 1
