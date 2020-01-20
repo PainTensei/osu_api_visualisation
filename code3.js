@@ -9,11 +9,14 @@ var seconds = [];
 
 var request = new XMLHttpRequest();
 
+var apikey = prompt("Please enter your osu! api key");
+
 (function loop(i, length) {
     if (i >= length) {
         return;
     }
-    var url = "https://osu.ppy.sh/api/get_user?k=cd0c48e95ce8bd3a80fe7c2620dd59d426dcba26&u=" + index[i] + "&m=0" ;
+    
+    var url = "https://osu.ppy.sh/api/get_user?k=" + apikey + "&u=" + index[i] + "&m=0" ;
 
     request.open("GET", url);
     request.onreadystatechange = function() {
